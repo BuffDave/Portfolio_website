@@ -13,6 +13,7 @@ export default {
   },
   build: {
     outDir: 'dist', // Output directory for built application
-    emptyOutDir: true
+    emptyOutDir: true,
+    assetsDir: 'src/css'
   }
 }
