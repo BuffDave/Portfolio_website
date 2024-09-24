@@ -10,5 +10,9 @@ export default {
   server: {
     port: 8080,
     hot: true
+  },
+  build: {
+    outDir: 'src', // Output directory for built application
+    emptyOutDir: false // Do not empty the outDir on build
   }
 }
