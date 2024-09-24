@@ -1,0 +1,107 @@
+/* Wave Animation */
+.line {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.wave{
+  position: absolute;
+  width: 200%;
+  height: 43%;
+  background-repeat: repeat no-repeat;
+  overflow: hidden;
+}
+
+.wave1{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+}
+
+.wave2{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+
+.wave3{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+  animation: animate 18s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50%{
+    transform: translateX(-25%) translateZ(0) scaleY(0.5);
+  }
+  100%{
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+/* Divider in Stack */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
+
+/* Resume Button */
+#btnResume{
+  background-color: #E61E2B;
+  transition: 0.3s ease;
+}
+
+#btnResume:hover{
+  background-color: #C41A25;
+}
+
+ /* Project Button */
+.btnProjects {
+  --color: #212529;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  transition: color .5s;
+  z-index: 1;
+  border-radius: 6px;
+  color:#212529;
+  background: white;
+ }
+ 
+ .btnProjects:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 220px;
+  border-radius: 50%;
+ }
+ 
+ .btnProjects:hover {
+  color: #fff;
+ }
+ 
+ .btnProjects:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .btnProjects:hover:before {
+  top: -30px;
+  left: -30px;
+ }

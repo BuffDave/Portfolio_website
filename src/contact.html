@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/logo/favicon.png" type="image/gif">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg bg-body-light py-4 shadow-none">
+        <div class="container px-5">
+          <a class="navbar-brand fw-bold" href="index.html" id="navTitle">Portfolio Website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-medium">
+              <li class="nav-item">
+                <a class="nav-link fw-normal" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- START MAIN -->
+    <main>
+      <section>
+        <div class="container-fluid bg-light">
+          <div class="py-4">
+            <div class="text-center py-5">
+              <i class="bi bi-envelope fs-3 text-white px-3 py-2 rounded-3" id="envelope"></i>
+              <h1 class="display-6 fw-bold pt-4">Get In Touch</h1>
+              <h5 class="text-muted fw-light">Let's work together!</h5>
+            </div>
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-md-6 col-sm-7 px-5">
+                <form>
+                  <!-- Access Key -->
+                  <div class="d-lg-flex gap-2">
+                    <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="name" class="form-control" required/>
+                    <label class="form-label" for="form4Example1">Full Name</label>
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" required/>
+                    <label class="form-label" for="form4Example1">Email Address</label>
+                  </div>
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="subject" class="form-control"/>
+                    <label class="form-label" for="form4Example1">Subject</label>
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                  </div>
+                  <!-- <div class="form-check d-flex justify-content-center align-items-center mb-4">
+                    <input type="checkbox" id="checkbox" class="ui-checkbox me-2">
+                    <label for="checkbox">
+                      Send me a copy of this message
+                    </label>
+                  </div> -->
+                  <div class="text-center">
+                    <button class="btnSubmit rounded-4 btn-block" type="submit">
+                      <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Submit</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contacts -->
+            <div class="container py-5">
+              <div class="row justify-content-center align-items-center px-3 gy-4">
+                <div class="col-lg-5">
+                  <div class="card border-0 shadow" data-aos="zoom-out-right" data-aos-once="true">
+                    <div class="card-body d-flex p-4">
+                      <div class="rounded-5">
+                        <i class="bi bi-geo-alt fs-2 p-2 text-gradient"></i>
+                      </div>     
+                      <div class="px-3">
+                        <h5 class="m-0 fw-semibold">My Address</h5>
+                        <p class="m-0 text-muted">Zambales, Philippines</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="card border-0 shadow" data-aos="zoom-out-left" data-aos-once="true">
+                    <div class="card-body d-flex p-4">
+                      <div class="rounded-5">
+                        <i class="bi bi-envelope-at text-gradient fs-2 p-2"></i>
+                      </div>     
+                      <div class="px-3">
+                        <h5 class="m-0 fw-semibold">Email Me</h5>
+                        <p class="m-0 text-muted"><a href="mailto: arinodavejoshua@gmail.com" class="link-underline link-underline-opacity-0 text-muted">arinodavejoshua@gmail.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center px-3 pt-4">
+                <div class="col-lg-5">
+                  <div class="card border-0 shadow" data-aos="zoom-out-up" data-aos-once="true">
+                    <div class="card-body d-flex p-4">
+                      <div class="rounded-5">
+                        <i class="bi bi-share fs-2 p-2 text-gradient"></i>
+                      </div>     
+                      <div class="px-3">
+                        <h5 class="m-0 fw-semibold">Social Profiles</h5>
+                        <div class="d-flex gap-2 fs-5">
+                          <a class="text-muted" href="https://www.facebook.com/davee.joshua/" target=”_blank”><i class="bi bi-facebook"></i></a>
+                          <a class="text-muted" href="https://www.instagram.com/davee.joshua/" target=”_blank”><i class="bi bi-instagram"></i></a>
+                          <a class="text-muted" href="https://www.linkedin.com/in/dave-joshua-ari%C3%B1o/" target=”_blank”><i class="bi bi-linkedin"></i></a>
+                          <a class="text-muted" href="https://github.com/BuffDave" target=”_blank”><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- Mouse-follow Animation -->
+<div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+
+    <!-- START FOOTER -->
+    <footer class="py-4">
+      <div class="container px-5">
+        <div class="row justify-content-between align-items-center flex-column flex-md-row">
+          <div class="col-auto">
+            <small>Copyright &copy; Portfolio Website 2023</small>
+          </div>
+          <div class="col-auto">
+            <a href="privacy.html" class="small">Privacy</a>
+            <span class="mx-1">&middot;</span>
+            <a href="terms.html" class="small">Terms</a>
+            <span class="mx-1">&middot;</span>
+            <a href="contact.html" class="small">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   <!-- SCRIPT -->
+   <style>
+    
+    </style>
+    <script type="module" src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <!-- Contact Form SMTP -->
+    <script>
+      const form = document.querySelector("form");
+      const fullName = document.getElementById("name");
+      const email = document.getElementById("email");
+      const subject = document.getElementById("subject");
+      const mess = document.getElementById("message");
+      const submitButton = document.getElementById("submit");
+
+      let isSending = false;
+
+      function sendEmail() {
+        const bodyMessage = `
+  <html>
+    <head>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          padding: 20px;
+        }
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+          color: #333;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+        .label {
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h2>Contact Form Submission</h2>
+        <p><span class="label">Full Name:</span> ${fullName.value}</p>
+        <p><span class="label">Email:</span> ${email.value}</p>
+        <p><span class="label">Message:</span> ${mess.value}</p>
+      </div>
+    </body>
+  </html>
+`;
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "arinodavejoshua@gmail.com",
+          Password : "5D33160982924CB2C47A7EC87592DF6A5E8B",
+          To : 'arinodavejoshua@gmail.com',
+          From : 'arinodavejoshua@gmail.com',
+          Subject : subject.value,
+          Body : bodyMessage
+        }).then(
+          message => {
+            if (message === "OK") {
+              Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success"
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  location.reload();
+                }
+              });
+              form.reset();
+              isSending = false;
+            }
+          }
+        );
+      }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (!isSending) { // Add this check
+      isSending = true;
+      sendEmail();
+    }
+});
+    </script>
+  </body>
+</html>
