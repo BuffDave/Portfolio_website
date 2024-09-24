@@ -12,7 +12,7 @@ export default {
     hot: true
   },
   build: {
-    outDir: './dist/',
+    outDir: 'src', // Output directory for built application
     emptyOutDir: false 
   }
 }
