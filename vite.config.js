@@ -4,7 +4,7 @@ export default {
   root: path.resolve(__dirname, 'src'),
   resolve: {
     alias: {
-      '~bootstrap': './node_modules/bootstrap', // Use a relative path
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
     }
   },
   server: {
