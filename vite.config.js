@@ -12,6 +12,7 @@ export default {
     hot: true
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    emptyOutDir: true // add this line
   }
 }
