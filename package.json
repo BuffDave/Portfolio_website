@@ -6,6 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "dev": "vite",
     "preview": "vite preview --port 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

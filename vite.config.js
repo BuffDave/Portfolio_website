@@ -12,8 +12,18 @@ export default {
     hot: true
   },
   build: {
-    outDir: 'dist', // Output directory for built application
+    outDir: 'dist',
     emptyOutDir: true,
-    assetsDir: 'src'
-  }
+    assetsDir: 'src',
+    rollupOptions: {
+      input: [
+        'src/index.html',
+        'src/contact.html',
+        'src/privacy.html',
+        'src/projects.html',
+        'src/resume.html',
+        'src/terms.html',
+      ], // Specify each HTML file individually
+    },
+  },
 }
