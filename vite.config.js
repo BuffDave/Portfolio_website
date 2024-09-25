@@ -1,5 +1,4 @@
 const path = require('path');
-const glob = require('glob');
 
 export default {
   root: path.resolve(__dirname, 'src'),
@@ -24,8 +23,6 @@ export default {
         'src/projects.html',
         'src/resume.html',
         'src/terms.html',
-        ...glob.sync('src/docs/**/*.{html,htm,txt,pdf}'), // Include PDF files
-        ...glob.sync('src/img/**/*.{jpg,jpeg,png,gif,svg}'),
       ],
     },
   },
