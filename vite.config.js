@@ -23,6 +23,7 @@ export default {
         'src/projects.html',
         'src/resume.html',
         'src/terms.html',
+        'src/docs/Resume.pdf'
       ], // Specify each HTML file individually
     },
   },
