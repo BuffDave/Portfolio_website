@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const glob = require('glob');
 
 export default {
   root: path.resolve(__dirname, 'src'),
@@ -14,7 +15,7 @@ export default {
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    assetsDir: 'src',
+    assetsDir: 'assets',
     rollupOptions: {
       input: [
         'src/index.html',
@@ -23,8 +24,9 @@ export default {
         'src/projects.html',
         'src/resume.html',
         'src/terms.html',
-        'src/docs/Resume.pdf'
-      ], // Specify each HTML file individually
+        ...glob.sync('src/docs/**/*.{html,htm,txt,pdf}'), // Include PDF files
+        ...glob.sync('src/img/**/*.{jpg,jpeg,png,gif,svg}'),
+      ],
     },
   },
 }
